@@ -3,7 +3,7 @@ ARG NODE_VERSION=10
 FROM node:${NODE_VERSION}-alpine
 RUN apk add --no-cache make gcc g++ python
 ARG THEIA_VERSION=latest
-WORKDIR /home/theia
+WORKDIR /opt/theia
 COPY package.json ./package.json
 RUN sed -i "s/THEIA_VERSION/$THEIA_VERSION/g" ./package.json
 RUN yarn --pure-lockfile && \
@@ -17,19 +17,16 @@ RUN yarn --pure-lockfile && \
     yarn cache clean
 
 FROM node:${NODE_VERSION}-alpine
-# See : https://github.com/theia-ide/theia-apps/issues/34
-RUN addgroup theia && \
-    adduser -G theia -s /bin/sh -D theia;
-RUN chmod g+rw /home && \
-    mkdir -p /home/project && \
-    chown -R theia:theia /home/theia && \
-    chown -R theia:theia /home/project;
 RUN apk add --no-cache git openssh bash tini
-ENV HOME /home/theia
-WORKDIR /home/theia
-COPY --from=0 --chown=theia:theia /home/theia /home/theia
+WORKDIR /opt/theia
+RUN mkdir /workspace && \
+    chown -R node:node /workspace && \
+    chown -R node:node /opt/theia
+COPY --from=0 --chown=node:node /opt/theia /opt/theia
 EXPOSE 3000
+ENV HOME /home/node
 ENV SHELL /bin/bash
 ENV USE_LOCAL_GIT true
-USER theia
-ENTRYPOINT [ "/sbin/tini", "--", "node", "/home/theia/src-gen/backend/main.js", "/home/project", "--hostname=0.0.0.0" ]
+USER node
+ENTRYPOINT [ "/sbin/tini", "--", "node", "/opt/theia/src-gen/backend/main.js", "/workspace", "--hostname=0.0.0.0" ]
+
