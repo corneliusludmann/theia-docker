@@ -11,9 +11,6 @@
         }
     },
     "dependencies": {
-        "@theia/callhierarchy": "THEIA_VERSION",
-        "@theia/debug": "THEIA_VERSION",
-        "@theia/debug-nodejs": "THEIA_VERSION",
         "@theia/file-search": "THEIA_VERSION",
         "@theia/git": "THEIA_VERSION",
         "@theia/json": "THEIA_VERSION",
@@ -28,8 +25,6 @@
         "@theia/search-in-workspace": "THEIA_VERSION",
         "@theia/terminal": "THEIA_VERSION",
         "@theia/textmate-grammars": "THEIA_VERSION",
-        "@theia/tslint": "THEIA_VERSION",
-        "@theia/typescript": "THEIA_VERSION",
         "typescript": "latest"
     },
     "resolutions": {
