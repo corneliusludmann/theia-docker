@@ -1,3 +1,8 @@
 #!/bin/bash
 
-docker build --build-arg THEIA_VERSION=$DOCKER_TAG -f $DOCKERFILE_PATH -t $IMAGE_NAME .
+# Allows tag names like "experimental_latest" and
+# uses only the last part after the underscore as Theia version.
+DOCKER_TAG_ARRAY=(${DOCKER_TAG//_/ })
+THEIA_VERSION=${DOCKER_TAG_ARRAY[-1]}
+
+docker build --build-arg THEIA_VERSION=$THEIA_VERSION -f $DOCKERFILE_PATH -t $IMAGE_NAME .
