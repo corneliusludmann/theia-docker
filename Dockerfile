@@ -6,7 +6,6 @@ ARG THEIA_VERSION=latest
 WORKDIR /home/theia
 COPY package.json ./package.json
 RUN sed -i "s/THEIA_VERSION/$THEIA_VERSION/g" ./package.json
-ARG GITHUB_TOKEN
 RUN yarn --pure-lockfile && \
     NODE_OPTIONS="--max_old_space_size=4096" yarn theia build && \
     yarn --production && \
