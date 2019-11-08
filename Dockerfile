@@ -1,9 +1,11 @@
 ARG NODE_VERSION=10
+
 FROM node:${NODE_VERSION}-alpine
 RUN apk add --no-cache make gcc g++ python
-ARG version=latest
+ARG THEIA_VERSION=latest
 WORKDIR /home/theia
-ADD $version.package.json ./package.json
+ADD package.json ./package.json
+RUN sed -i "s/THEIA_VERSION/$THEIA_VERSION/g" ./package.json
 ARG GITHUB_TOKEN
 RUN yarn --pure-lockfile && \
     NODE_OPTIONS="--max_old_space_size=4096" yarn theia build && \
