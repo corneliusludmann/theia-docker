@@ -4,7 +4,7 @@ FROM node:${NODE_VERSION}-alpine
 RUN apk add --no-cache make gcc g++ python
 ARG THEIA_VERSION=latest
 WORKDIR /home/theia
-ADD package.json ./package.json
+COPY package.json ./package.json
 RUN sed -i "s/THEIA_VERSION/$THEIA_VERSION/g" ./package.json
 ARG GITHUB_TOKEN
 RUN yarn --pure-lockfile && \
