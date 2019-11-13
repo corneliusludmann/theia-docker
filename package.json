@@ -20,6 +20,7 @@
         "@theia/mini-browser": "THEIA_VERSION",
         "@theia/navigator": "THEIA_VERSION",
         "@theia/outline-view": "THEIA_VERSION",
+        "@theia/plugin-ext-vscode": "THEIA_VERSION",
         "@theia/preferences": "THEIA_VERSION",
         "@theia/preview": "THEIA_VERSION",
         "@theia/search-in-workspace": "THEIA_VERSION",
