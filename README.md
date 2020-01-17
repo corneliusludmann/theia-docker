@@ -67,7 +67,9 @@ After starting the container open http://localhost:3000 in your browser.
 
 ## Extensions for these Images
 
-There are two ways to extend these images just by mounting files into the container. Every shell script that is mounted in the folder `/entrypoint.d/` will be executed by `source` in the `entrypoint.sh` Bash script on container start. The [`extensions`](https://github.com/corneliusludmann/theia-docker/tree/master/extensions/entrypoint.d) folder has some examples. Besides that, every shell script that is mounted in `/home/theia/.bashrc.d/` will be executed by `source` in `bash.rc` each time a new terminal is opened in Theia.
+There are different ways to extend these images just by mounting files into the container. Every shell script that is mounted in the folder `/entrypoint.d/` will be executed by `source` in the `entrypoint.sh` Bash script on container start. The [`extensions`](https://github.com/corneliusludmann/theia-docker/tree/master/extensions/entrypoint.d) folder has some examples. Besides that, every shell script that is mounted in `/home/theia/.bashrc.d/` will be executed by `source` in `bash.rc` each time a new terminal is opened in Theia.
+
+Additionally, you can mount a VSCode plugin into the folder `/opt/theia/plugins/`. Not all VSCode plugins are supported yet but the compatibility is improving continuously.
 
 
 ## Automatic Build Pipeline
