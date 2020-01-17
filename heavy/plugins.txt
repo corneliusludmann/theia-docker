@@ -1,0 +1,29 @@
+# This file lists URLs to VSCode compatible plugins that will be installed in Theia.
+# See https://www.npmjs.com/search?q=%40theia%2Fvscode-builtin for VSCode builtin plugins.
+
+https://registry.npmjs.org/@theia/vscode-builtin-bat/-/vscode-builtin-bat-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-cpp/-/vscode-builtin-cpp-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-css/-/vscode-builtin-css-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-docker/-/vscode-builtin-docker-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-git/-/vscode-builtin-git-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-go/-/vscode-builtin-go-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-html/-/vscode-builtin-html-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-ini/-/vscode-builtin-ini-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-java/-/vscode-builtin-java-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-javascript/-/vscode-builtin-javascript-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-json/-/vscode-builtin-json-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-log/-/vscode-builtin-log-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-make/-/vscode-builtin-make-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-markdown/-/vscode-builtin-markdown-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-merge-conflict/-/vscode-builtin-merge-conflict-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-npm/-/vscode-builtin-npm-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-perl/-/vscode-builtin-perl-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-php/-/vscode-builtin-php-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-python/-/vscode-builtin-python-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-r/-/vscode-builtin-r-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-scss/-/vscode-builtin-scss-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-shellscript/-/vscode-builtin-shellscript-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-sql/-/vscode-builtin-sql-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-typescript/-/vscode-builtin-typescript-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-xml/-/vscode-builtin-xml-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-yaml/-/vscode-builtin-yaml-0.2.1.tgz

@@ -1,0 +1,20 @@
+# This file lists URLs to VSCode compatible plugins that will be installed in Theia.
+# See https://www.npmjs.com/search?q=%40theia%2Fvscode-builtin for some useful plugins.
+
+https://registry.npmjs.org/@theia/vscode-builtin-bat/-/vscode-builtin-bat-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-git/-/vscode-builtin-git-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-html/-/theia/vscode-builtin-html-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-ini/-/vscode-builtin-ini-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-javascript/-/theia/vscode-builtin-javascript-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-json/-/theia/vscode-builtin-json-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-log/-/theia/vscode-builtin-log-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-make/-/theia/vscode-builtin-make-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-markdown/-/theia/vscode-builtin-markdown-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-merge-conflict/-/vscode-builtin-merge-conflict-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-perl/-/theia/vscode-builtin-perl-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-python/-/theia/vscode-builtin-python-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-shellscript/-/theia/vscode-builtin-shellscript-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-sql/-/theia/vscode-builtin-sql-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-sql/-/vscode-builtin-sql-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-xml/-/vscode-builtin-xml-0.2.1.tgz
+https://registry.npmjs.org/@theia/vscode-builtin-yaml/-/vscode-builtin-yaml-0.2.1.tgz

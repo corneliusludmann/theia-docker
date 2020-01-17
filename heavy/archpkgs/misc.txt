@@ -1,0 +1,17 @@
+base-devel
+bash
+bash-completion
+curl
+git
+hq
+imagemagick
+jq
+openssh
+rsync
+shellcheck
+sqlite
+sudo
+tidy
+vim
+wget
+yq

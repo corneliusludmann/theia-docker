@@ -1,0 +1,14 @@
+# https://wiki.archlinux.org/index.php/Java
+
+jdk-openjdk
+jdk11-openjdk
+jdk10-openjdk
+jdk8-openjdk
+
+openjdk-doc
+openjdk11-doc
+openjdk10-doc
+openjdk8-doc
+
+gradle
+maven
