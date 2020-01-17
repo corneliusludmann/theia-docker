@@ -1,6 +1,7 @@
 # This file lists URLs to VSCode compatible plugins that will be installed in Theia.
 # See https://www.npmjs.com/search?q=%40theia%2Fvscode-builtin for VSCode builtin plugins.
 
+https://github.com/microsoft/vscode-go/releases/download/0.12.0/Go-0.12.0.vsix
 https://registry.npmjs.org/@theia/vscode-builtin-bat/-/vscode-builtin-bat-0.2.1.tgz
 https://registry.npmjs.org/@theia/vscode-builtin-cpp/-/vscode-builtin-cpp-0.2.1.tgz
 https://registry.npmjs.org/@theia/vscode-builtin-css/-/vscode-builtin-css-0.2.1.tgz
