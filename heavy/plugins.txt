@@ -2,6 +2,8 @@
 # See https://www.npmjs.com/search?q=%40theia%2Fvscode-builtin for VSCode builtin plugins.
 
 https://github.com/microsoft/vscode-go/releases/download/0.12.0/Go-0.12.0.vsix
+https://github.com/microsoft/vscode-java-debug/releases/download/0.24.0/vscjava.vscode-java-debug-0.24.0.vsix
+https://github.com/redhat-developer/vscode-java/releases/download/v0.55.1/redhat.java-0.55.1.vsix
 https://registry.npmjs.org/@theia/vscode-builtin-bat/-/vscode-builtin-bat-0.2.1.tgz
 https://registry.npmjs.org/@theia/vscode-builtin-cpp/-/vscode-builtin-cpp-0.2.1.tgz
 https://registry.npmjs.org/@theia/vscode-builtin-css/-/vscode-builtin-css-0.2.1.tgz
