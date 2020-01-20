@@ -29,7 +29,8 @@ RUN apk add --no-cache \
 RUN usermod --login theia --move-home --home /home/theia node && \
 	groupmod --new-name theia node
 USER theia
-RUN mkdir /home/theia/.bashrc.d && \
+RUN mkdir /home/theia/.theia && \
+	mkdir /home/theia/.bashrc.d && \
 	(echo; echo 'for file in /home/theia/.bashrc.d/*.sh; do source "$file"; done'; echo) >> /home/theia/.bashrc
 USER root
 WORKDIR /opt/theia

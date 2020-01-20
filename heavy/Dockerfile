@@ -27,7 +27,8 @@ RUN useradd --create-home --user-group -G wheel,docker --shell /bin/bash theia
 RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
 
 USER theia
-RUN mkdir /home/theia/.bashrc.d && \
+RUN mkdir /home/theia/.theia && \
+	mkdir /home/theia/.bashrc.d && \
 	(echo; echo 'for file in /home/theia/.bashrc.d/*.sh; do source "$file"; done'; echo) >> /home/theia/.bashrc
 RUN mkdir -p /tmp/nvm && cd /tmp/nvm && \
 	git clone https://aur.archlinux.org/nvm.git && cd nvm && \
