@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TS=$(date '+%Y%m%d-%H%M%S')
+docker tag $IMAGE_NAME $DOCKER_REPO:${TS}_$DOCKER_TAG
+docker push $DOCKER_REPO:${TS}_$DOCKER_TAG
