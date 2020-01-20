@@ -12,6 +12,7 @@ shellcheck
 sqlite
 sudo
 tidy
+trash-cli
 vim
 wget
 yq
