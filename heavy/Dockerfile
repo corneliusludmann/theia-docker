@@ -22,11 +22,11 @@ COPY archpkgs /archpkgs
 RUN pacman -Syu --noconfirm && \
 	egrep -hv '^[[:blank:]]*#|^[[:blank:]]*$' archpkgs/*.txt | pacman -S --noconfirm - && \
 	rm -r /archpkgs
-RUN useradd --create-home --user-group -G wheel,docker --shell /bin/bash theia
-
-RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
+RUN useradd --create-home --user-group -G wheel,docker --shell /bin/bash theia && \
+	echo "%wheel ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
 
 USER theia
+COPY --chown=theia:theia setup /home/theia/setup
 RUN mkdir /home/theia/.theia && \
 	mkdir /home/theia/.bashrc.d && \
 	(echo; echo 'for file in /home/theia/.bashrc.d/*.sh; do source "$file"; done'; echo) >> /home/theia/.bashrc
@@ -36,6 +36,8 @@ RUN mkdir -p /tmp/nvm && cd /tmp/nvm && \
 	ln -s /usr/share/nvm/init-nvm.sh /home/theia/.bashrc.d/ && \
 	source /usr/share/nvm/init-nvm.sh && \
 	nvm install 10
+RUN for file in /home/theia/setup/*.sh; do sh "$file" || exit 1; done && \
+	rm -r /home/theia/setup
 USER root
 
 RUN rm -r /var/cache/pacman/pkg
