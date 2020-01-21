@@ -19,7 +19,7 @@ RUN yarn --pure-lockfile && \
 FROM archlinux
 COPY archpkgs /archpkgs
 
-RUN pacman -Syu --noconfirm && \
+RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syyu --noconfirm && \
 	egrep -hv '^[[:blank:]]*#|^[[:blank:]]*$' archpkgs/*.txt | pacman -S --noconfirm - && \
 	rm -r /archpkgs
 RUN useradd --create-home --user-group -G wheel,docker --shell /bin/bash theia && \
